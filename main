@@ -1,0 +1,30 @@
+#include "HRT.h"
+#include <iostream>
+#include <string>
+
+
+int main(void) {
+	
+	std::string name, surname;
+	int gun, ay, yil;
+
+	std::cout << "adinizi giriniz:";
+	std::cin >> name;
+	std::cout << std::endl;
+	std::cout << "soyadinizi giriniz:";
+	std::cin >> surname;
+	std::cout << std::endl;
+	std::cout << "dogum tarihinizi gun , ay, yil olarak giriniz:";
+	std::cin >> gun >> ay >> yil;
+	std::cout << std::endl;
+	system("cls");
+
+	HRT ipr(name, surname, gun, ay, yil);
+
+	ipr.showInfos();
+
+	system("PAUSE");
+
+
+	
+}
